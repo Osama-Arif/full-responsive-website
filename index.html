@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="toggler-container">
+                <button class="navbar-toggler d-md-none toggler" type="button" aria-controls="sg-navbar-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    ☰
+                    <span class="hidden-xs-down">Menu</span>
+                </button>
+            </div>
+
+            <div class="one">
+                <div class="sign"><i class="fa fa-sign-in"></i> <span class="login">Login</span></div>
+            </div>
+            <div class="two">
+                <img class="logo-img" src="./media/logo.svg" alt="logo">
+                <img class="small-logo" src="./media/logo-small.svg" alt="small">
+            </div>
+            <div class="three">
+                <div class="searchandbag">
+                    <input class="search-site" type="search" placeholder="Search (keywords,etc)">
+                    <button type="submit" class="search-icon fa fa-search "></button>
+                    <div class="bagandquantity"><i class="minicart-icon fa fa-shopping-bag"></i>
+                        <span class="minicart-quantity">
+                            0
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <nav class="nav">
+            <div class="nav-li-container">
+                <ul class="navbar">
+                    <li><a href="#">New Arrivals <i class="fas fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Womens</a></li>
+                            <li><a href="#">mens</a></li>
+                            <li><a href="#">Electronics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Womens <i class="fas fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Clothing <i class="fas fa fa-caret-right"
+                                        style="position: absolute; right: 10px;"></i></a>
+                                <ul>
+                                    <li><a href="#">Outfits</a></li>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Bottoms</a></li>
+                                    <li><a href="#">Jackets &amp; Coats</a></li>
+                                    <li><a href="#">Feeling Red</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Jewelry <i class="fas fa fa-caret-right"
+                                        style="position: absolute; right: 10px;"></i></a>
+                                <ul>
+                                    <li><a href="#">Earrings</a></li>
+                                    <li><a href="#">Bracelets</a></li>
+                                    <li><a href="#">Necklaces</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Accessories <i class="fas fa fa-caret-right"
+                                        style="position: absolute; right: 10px;"></i></a>
+                                <ul>
+                                    <li><a href="#">Scarves</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mens <i class="fas fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Clothing <i class="fas fa fa-caret-right"
+                                        style="position: absolute; right: 10px;"></i></a>
+                                <ul>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Jackets &amp; Coats</a></li>
+                                    <li><a href="#">Dress Shirts</a></li>
+                                    <li><a href="#">Shorts</a></li>
+                                    <li><a href="#">Pants</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Accessories <i class="fas fa fa-caret-right"
+                                        style="position: absolute; right: 10px;"></i></a>
+                                <ul>
+                                    <li><a href="#">Ties</a></li>
+                                    <li><a href="#">Gloves</a></li>
+                                    <li><a href="#">Luggage</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Electronics <i class="fas fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Digital Cameras</a></li>
+                            <li><a href="#">ipod &amp; MP3 Players</a></li>
+                            <li><a href="#">GPS Navigation</a></li>
+                            <li><a href="#">Gaming</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Top Sellers</a></li>
+                    <li><a class="hide-me" href="#"><i class="fa fa-sign-in"><span class="nav-log"> Login</span></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+    <div class="long-search" style="display: none; margin-bottom: -15px;"><input
+            style="width: 100%; padding: 0.5rem 0.7rem;" type="search" placeholder="Search(Keyword,etc)"><button
+            style="position: relative; top: -25px; left:94%; border: none; background-color: white;" type="submit"
+            class="search-icon fa fa-search "></button></div>
+
+    <div class="main-content">
+        <div class="radio-pic">
+            <h1 class="title-gaming">Gaming</h1>
+        </div>
+
+        <div class="main-container">
+            <!-- <select name="top_sellers2" class="top-sellers" style="display:none;">
+                <option>Best Matches</option>
+                <option>Price Low To High</option>
+                <option>Price High To Low</option>
+                <option>Product Name A - Z</option>
+                <option>Product Name Z - A</option>
+                <option style="margin-left:20px;">Brand</option>
+                <option>Most Popular</option>
+                <option selected>Top Sellers</option>
+            </select> -->
+
+            <div class="left-side">
+                <select name="top_sellers" class="top-sellers">
+                    <option>Best Matches</option>
+                    <option>Price Low To High</option>
+                    <option>Price High To Low</option>
+                    <option>Product Name A - Z</option>
+                    <option>Product Name Z - A</option>
+                    <option style="margin-left:20px;">Brand</option>
+                    <option>Most Popular</option>
+                    <option selected>Top Sellers</option>
+                </select>
+
+                <input class="reset-button" type="reset">
+
+                <!-- for-category -->
+                <div class="container-category">
+                    <div class="category">
+                        Category
+                    </div>
+
+                    <div class="category-radio">
+
+                        <input type="radio" name="category" id="electronics" value="electronics">
+                        <label for="electronics">Electronics</label><br>
+                        <input type="radio" name="category" id="gaming" value="gaming">
+                        <label for="gaming">Gaming</label><br>
+                        <input type="radio" name="category" id="game_consoles" value="game_consoles">
+                        <label for="game_consoles">Game Consoles</label><br>
+                        <input type="radio" name="category" id="games" value="games">
+                        <label for="games">Games</label>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- for Price -->
+                <div class="container-category">
+                    <div class="category">
+                        Price
+                    </div>
+                    <div class="category-price">
+                        <input type="radio" name="dol" id="dollar">
+                        <label for="electronics">$20 - $49.99</label><br>
+                        <input type="radio" name="dol" id="dollar">
+                        <label for="electronics">$50 - $99.99</label><br>
+                        <input type="radio" name="dol" id="dollar">
+                        <label for="electronics">$100 - 499.99</label><br>
+                    </div>
+                </div>
+
+                <!-- for-brand -->
+                <div class="container-category">
+                    <div class="category">
+                        Brand
+                    </div>
+                    <div class="category-price">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="atari" />
+                                <label for="atari">Atari</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="easports" />
+                                <label for="easports">EASports</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lucasarts" />
+                                <label for="lucasarts">LucasArts</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lucasarts" />
+                                <label for="lucasarts">Microsoft</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="midway" />
+                                <label for="midway">Midway</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="namco" />
+                                <label for="namco">Namco</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nintendo" />
+                                <label for="nintendo">Nintendo</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nintendo" />
+                                <label for="nintendo">Rockstar games</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sega" />
+                                <label for="sega">Sega</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sega" />
+                                <label for="sega">Sierra</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sega" />
+                                <label for="sega">Sony</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="ubisoft" />
+                                <label for="ubisoft">Ubi Soft</label>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="right-side">
+
+                <div class="three-result">
+                    <div class="for-select"><select name="top_sellers2" class="top-sellers" style="display:none;">
+                            <option>Best Matches</option>
+                            <option>Price Low To High</option>
+                            <option>Price High To Low</option>
+                            <option>Product Name A - Z</option>
+                            <option>Product Name Z - A</option>
+                            <option style="margin-left:20px;">Brand</option>
+                            <option>Most Popular</option>
+                            <option selected>Top Sellers</option>
+                        </select>
+                    </div>
+                    <div class="result">26 Results</div>
+                    <button type="submit" style="display: none;">Filter</button>
+
+                </div>
+
+
+                <div class="container-for-boxes">
+                    <div style="width: 100%; display: flex;">
+                        <div class="main-box" id="main-box1">
+                            <div class="img-box1">
+                                <img class="img1" src="./media/1.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Madden NFL 09 (for Wii)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-box">
+                            <div class="img-box2">
+                                <img class="img1" src="./media/2.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Pipe Mania (for Sony PSP)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-box">
+                            <div class="img-box3">
+                                <img class="img1" src="./media/3.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Mario Kart (for Nintendo DS)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%; display: flex;">
+                        <div class="main-box">
+                            <div class="img-box4">
+                                <img class="img1" src="./media/4.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Lego Indian Jones: The Original <br> Adventure (for
+                                        Wii)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-box">
+                            <div class="img-box5">
+                                <img class="img1" src="./media/5.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Big Brain Academy (for Nintendo DS)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box" id="main-box6">
+                            <div class="img-box6">
+                                <img class="img1" src="./media/6.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Midway Cruis'n (for Wii)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; display: flex;">
+                        <div class="main-box" id="main-box7">
+                            <div class="img-box7">
+                                <img class="img1" src="./media/7.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Sega Bass Fishing (for Wii)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box">
+                            <div class="img-box8">
+                                <img class="img1" src="./media/8.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Star Wars: The Force Unleased (for <br> Sony PSP)</a>
+                                </div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box">
+                            <div class="img-box9">
+                                <img class="img1" src="./media/9.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Robert Ludlum's: The Bourne <br> Conspiracy (for X-Box
+                                        360)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; display: flex;">
+                        <div class="main-box">
+                            <div class="img-box10">
+                                <img class="img1" src="./media/10.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Grand Theft Auto 4 (for X-Box 360)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box">
+                            <div class="img-box11">
+                                <img class="img1" src="./media/11.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Nascar 09 (for Sony PS3)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box" id="main-box12">
+                            <div class="img-box12">
+                                <img class="img1" src="./media/12.jpg" alt="Madden" style="width: 100%; height: 100%;">
+                                <div class="fa-stack fa-lg nika-logo">
+                                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                    <a href="#" style="color: #444;"><i class="fa fa-expand fa-stack-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="lower-container">
+                                <div class="pro-name"><a href="#">Eternal Sonata (for Sony PS3)</a></div>
+                                <div class="pro-price">$49.99</div>
+                                <div class="pro-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <input class="more-results" type="submit" value="More Results">
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="foot">
+        <div class="container-for-4div">
+            <div class="container-footer1">
+                <a href="#" class="for-link">
+                    <h2 class="footer-h2">Locate Store</h2>
+                </a>
+                <span class="footer-1-span">The Store Locator is designed to help<br> you find the closest store
+                    near you.</span>
+            </div>
+            <div class="container-footer2">
+                <h2 class="footer-h2">Account</h2>
+                <a href="#" class="for-link">My Account</a><br>
+                <a href="#" class="for-link">Check Order</a>
+
+            </div>
+            <div class="container-footer3">
+                <h2 class="footer-h2">Customer Service</h2>
+                <a href="#" class="for-link">Contact Us</a><br>
+                <a href="#" class="for-link">Gift Certificates</a><br>
+                <a href="#" class="for-link">Help</a><br>
+                <a href="#" class="for-link">Cite Map</a><br>
+
+            </div>
+            <div class="container-footer4">
+                <h2 class="footer-h2">About</h2>
+                <a href="#" class="for-link">About Us</a><br>
+                <a href="#" class="for-link">Privacy</a><br>
+                <a href="#" class="for-link">Terms</a><br>
+                <a href="#" class="for-link">Jobs</a><br>
+            </div>
+        </div>
+
+        <div class="for-row" style="display: flex; flex-direction: column; display: none;"><a href="#" class="for-link"
+                style="text-decoration: none; color: #444">
+                <div class="row1" style="border-bottom: 1px solid black; padding: 0px 14px 7px 14px;">Locate Store <i
+                        class="fa-solid fa-location-dot" style="float: right; color: black;"></i></div>
+                <div class="row2" style="border-bottom: 1px solid black;padding: 7px 14px 7px 14px;">Account <i
+                        class="fa fa-angle-down" style="font-size: 25px; float: right; color: black;"></i></div>
+                <div class="row3" style="border-bottom: 1px solid black;padding: 7px 14px 7px 14px;">Customer Service <i
+                        class="fa fa-angle-down" style="font-size: 25px; float: right; color: black;"></i></div>
+                <div class="row4" style="border-bottom: 1px solid black;padding: 7px 14px 7px 14px;">About <i
+                        class="fa fa-angle-down" style="font-size: 25px; float: right; color: black;"></i></div>
+            </a></div>
+
+        <hr class="hr">
+        <div class="container-last">
+            <div class="container-last-icon">
+                <div class="all-icon-in-one">
+                    <a href="#"><i class="fa fa-linkedin-square fa-3x set-icon"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-3x set-icon"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-3x set-icon"></i></a>
+                    <a href="#"><i class="fa fa-youtube-square fa-3x set-icon"></i></a>
+                    <a href="">
+                        <div class="last-icon">
+                            <i class="fa fa-arrow-up up"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="copyright-reserves">
+                <div class="copyright">© 2004-2019 Salesforce. All Rights Reserved. <br>
+                    This is a demo store only Orders made will NOT be processed. </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+.main-container {
+    display: flex;
+    width: 80%;
+    padding-top: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    // background-color: red;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid $grey;
+
+    .left-side {
+        background-color: #F9F9F9;
+        // width: 18vw;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+
+
+        .top-sellers {
+            width: 100%;
+            padding-left: 8px;
+            // padding-right: 6.25rem;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            // background-color: pink;
+            font-family: $font;
+            font-size: 0.938rem;
+            color: $grey;
+            border-radius: 4px;
+
+
+        }
+
+        .reset-button {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-top: 18px;
+            color: $blue;
+            border: 1px solid $blue;
+            border-radius: 4px;
+            font-family: $font;
+            font-size: 15px;
+
+            &:hover {
+                background-color: $blue;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .container-category {
+            margin-top: 18px;
+
+            .category {
+                border: 1px solid $grey;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .category-radio {
+                border: 1px solid $grey;
+                border-top: none;
+                padding-top: 2.2rem;
+                padding-bottom: 3.8rem;
+                color: #0070D2;
+
+                #electronics {
+                    margin-left: 2.5rem;
+                    margin-bottom: 0.8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #gaming {
+                    margin-left: 3.5rem;
+                    margin-bottom: 0.8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #game_consoles {
+                    margin-left: 4.5rem;
+                    margin-bottom: 0.8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #games {
+                    margin-left: 4.5rem;
+                    margin-bottom: 0.8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+
+
+            }
+
+            .category-price {
+                padding-left: 1.2rem;
+                color: #0070D2;
+                border: 1px solid $grey;
+                border-top: none;
+                padding-top: 2.2rem;
+                padding-bottom: 2.5rem;
+                color: #0070D2;
+
+                #dollar {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0;
+
+                #atari {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #easports {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #lucasarts {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #midway {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #namco {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #nintendo {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #rockstargames {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #sega {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #sierra {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #sony {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #ubisoft {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .right-side {
+        width: 100%;
+        background-color: #F9F9F9;
+
+        .result {
+            text-align: center;
+            color: $grey;
+            padding-bottom: 1rem;
+
+        }
+
+        .container-for-boxes {
+            // display: flex;
+            padding-top: 1rem;
+            // flex-wrap: wrap;
+
+            .main-box {
+                // width: 15rem;
+                padding: 0px 15px;
+
+                @mixin imgbox {
+
+                    position: relative;
+                    height: 15.5rem;
+                    // background-image: url("./media/2.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    .nika-logo {
+                        position: absolute;
+                        top: 75%;
+                        left: 75%;
+                        color: #F9F9F9;
+
+                    }
+
+                }
+
+                .img-box1 {
+                    @include imgbox();
+                    // background-image: url(./media/1.jpg)
+                }
+
+
+                .img-box2 {
+                    @include imgbox();
+                    // background-image: url(./media/2.jpg);
+                }
+
+                .img-box3 {
+                    @include imgbox();
+                    // background-image: url(./media/3.jpg)
+                }
+
+                .img-box4 {
+                    @include imgbox();
+                    // background-image: url(./media/4.jpg)
+                    background-color: red
+                }
+
+                .img-box5 {
+                    @include imgbox();
+                    // background-image: url(./media/5.jpg)
+                }
+
+                .img-box6 {
+                    @include imgbox();
+                    // background-image: url(./media/6.jpg)
+                }
+
+                .img-box7 {
+                    @include imgbox();
+                    // background-image: url(./media/7.jpg)
+                }
+
+                .img-box8 {
+                    @include imgbox();
+                    // background-image: url(./media/8.jpg)
+                }
+
+                .img-box9 {
+                    @include imgbox();
+                    // background-image: url(./media/9.jpg)
+                }
+
+                .img-box10 {
+                    @include imgbox();
+                    // background-image: url(./media/10.jpg)
+                }
+
+                .img-box11 {
+                    @include imgbox();
+                    // background-image: url(./media/11.jpg)
+                }
+
+                .img-box12 {
+                    @include imgbox();
+                    // background-image: url(./media/12.jpg)
+                }
+
+
+
+
+                .lower-container {
+                    padding: 2.8rem 0 1rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #0070D2;
+                    }
+
+                    .pro-price {
+                        font-weight: 700;
+                        font-size: 1.125em;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .more-results {
+        padding: 0.438rem 5rem 0.438rem 5rem;
+        margin: 0px 34.5%;
+        color: $blue;
+        border: 1px solid $blue;
+        border-radius: 4px;
+        font-family: $font;
+        font-size: 15px;
+
+        &:hover {
+            background-color: $blue;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-content .radio-pic .title-gaming {
+        font-size: 1.8rem;
+        padding-left: 0.625em;
+    }
+
+    .main-container {
+        margin: 0;
+        width: 100%;
+        padding-top: 2rem;
+
+        // padding-right: 15px;
+        // padding-left: 15px;
+        // margin-left: 0;
+        // margin-right: 0;
+        .right-side .result {
+            width: 30%;
+        }
+
+        .left-side {
+            display: none;
+            // .top-sellers{display: block !important;}
+
+        }
+
+        .top-sellers {
+            display: block !important;
+            height: 35px;
+        }
+
+        .right-side {
+            .result {
+                width: 30%;
+                margin: 0px auto;
+            }
+
+            .three-result {
+                width: 90%;
+                display: flex;
+                padding: 0px 1rem;
+
+                button {
+                    display: block !important;
+                    color: #fff;
+                    background-color: #00a1e0;
+                    border-color: #00a1e0;
+                    cursor: pointer;
+                    font-weight: 400;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 3.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.1875rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:543px) {
+    .top-sellers{
+        margin-top: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 40px;
+    }
+    .main-container .right-side .result {margin-bottom: 45px; padding-bottom: 0;}
+    .main-container .right-side .three-result button {
+        height: 40px;
+        margin-top: 35px;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+    .main-container .right-side .container-for-boxes #main-box1{display: none !important}
+    .main-container .right-side .container-for-boxes #main-box6{display: none !important}
+    .main-container .right-side .container-for-boxes #main-box7{display: none !important}
+    .main-container .right-side .container-for-boxes #main-box12{display: none !important}
+    .main-container .more-results {width: 94%; margin: 0;}
+
+
+
+    // .main-container .right-side .three-result {display: none !important;}
+    .three-result{width: 100%;
+        position: relative;
+        .for-select{
+            width: 80%;
+        }
+        .top-sellers{
+            width: 100%;
+            
+        }
+        
+    }
+    .main-container .right-side .three-result button {
+        width: 80%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding: 0rem;
+        // margin-right: 10%;
+    }
+}

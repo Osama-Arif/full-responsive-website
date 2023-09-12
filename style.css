@@ -1,0 +1,920 @@
+.header {
+  width: 100%;
+  height: 7.474375rem;
+}
+.header .header-top {
+  display: flex;
+  width: 82.5%;
+  height: 58.5%;
+  margin: 0px auto;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .header-top .toggler-container {
+  display: none;
+}
+.header .header-top .one {
+  position: relative;
+  display: flex;
+}
+.header .header-top .one .sign {
+  width: 7rem;
+  color: #444444;
+  margin-left: 0.5em;
+  align-self: center;
+}
+.header .header-top .one .sign .login {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header .header-top .two {
+  width: 14.125em;
+  position: relative;
+  margin: auto 3.5px;
+  margin-left: auto;
+}
+.header .header-top .two .small-logo {
+  display: none;
+}
+.header .header-top .three {
+  width: 40%;
+}
+.header .header-top .three .searchandbag {
+  padding-left: 2.8rem;
+  display: flex;
+  height: 100%;
+}
+.header .header-top .three .searchandbag .search-site {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: auto 0px;
+  width: 20rem;
+  color: #495057;
+  background-color: #fff;
+  border: 0.5px solid #d1d0d0;
+  border-radius: 0.1875rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+.header .header-top .three .searchandbag .search-icon {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  border: none;
+  height: 20px;
+  margin: auto 0px;
+  left: -23px;
+}
+.header .header-top .three .searchandbag .bagandquantity {
+  margin: auto 0px;
+}
+.header .header-top .three .searchandbag .minicart-icon {
+  margin: auto 0px;
+  color: #444444;
+  font-size: 24px;
+  margin-left: 7px;
+}
+.header .header-top .three .searchandbag .minicart-quantity {
+  position: absolute;
+  background-color: #00a1e0;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  line-height: normal;
+  /* display: inline-block; */
+  text-align: center;
+  font-size: 0.8125em;
+  top: 25%;
+  color: #fff;
+}
+.header .nav {
+  position: relative;
+  width: 100%;
+  height: 41.5%;
+  background-color: #444444;
+  background-color: #444444;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.header .nav .nav-li-container .navbar {
+  height: 100%;
+  position: absolute;
+  left: 7.8%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header .nav .nav-li-container .navbar li {
+  display: inline-block;
+  position: relative;
+}
+.header .nav .nav-li-container .navbar li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  /* margin-top: 4px; */
+}
+.header .nav .nav-li-container .navbar li:hover a {
+  color: #444444;
+  background-color: white;
+}
+.header .nav .nav-li-container .navbar li:hover > ul {
+  display: block;
+}
+.header .nav .nav-li-container .navbar ul {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  padding: 0;
+  z-index: 1;
+  /* margin-top: 4px; */
+  /* padding-left: 91px; */
+}
+.header .nav .nav-li-container .navbar ul li {
+  width: 100%;
+}
+.header .nav .nav-li-container .navbar ul ul {
+  left: 100%;
+  top: 0;
+}
+.header .nav .nav-li-container .navbar .hide-me {
+  display: none;
+}
+
+.main-content {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  position: relative;
+}
+.main-content .radio-pic {
+  width: 100%;
+  background-image: url("./media/cat-landing-gaming.jpg");
+  height: 25vw;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  background-position-y: 40%;
+  clip-path: polygon(0% 0, 100% 0%, 100% 85%, 0% 100%);
+}
+.main-content .radio-pic .title-gaming {
+  top: 50%;
+  margin: -1em 0 0;
+  position: relative;
+  color: #fff;
+  padding: 0.3125em 0.625em 0.3125em 6.6vw;
+  background-color: #00a1e0;
+  display: inline-block;
+  font-family: Dosis, sans-serif;
+  font-weight: 100;
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .sign {
+    display: none;
+    background-color: red;
+  }
+  .hide-me {
+    display: block !important;
+  }
+  .logo-img {
+    display: none;
+  }
+  .small-logo {
+    display: block !important;
+    margin-left: 9rem;
+    width: 4rem;
+  }
+  .searchandbag {
+    width: 20rem;
+  }
+  .header .header-top .three .searchandbag {
+    padding-left: 0;
+  }
+  .header .header-top {
+    width: 52.5%;
+  }
+  .header .header-top .three .searchandbag .search-site {
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 4.3rem;
+  }
+  .header .header-top {
+    padding: 0px 1rem;
+    padding-top: 13px;
+    width: 100%;
+  }
+  .header .header-top .toggler-container {
+    display: block;
+    width: 120px;
+  }
+  .header .header-top .toggler-container .toggler {
+    display: block;
+    font-size: 25px;
+    border: none;
+    background-color: #F9F9F9;
+  }
+  .header .header-top .two .small-logo {
+    margin-left: 5.9rem;
+  }
+  .header .header-top .three .searchandbag .search-site {
+    width: 11.5rem;
+  }
+  .header .nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 543px) {
+  .header .header-top {
+    width: 100%;
+    position: relative;
+  }
+  .header .header-top .toggler-container {
+    width: 30px;
+  }
+  .header .header-top .two {
+    margin: 0px auto;
+  }
+  .header .header-top .three {
+    width: 20%;
+  }
+  .header .header-top .three .searchandbag {
+    margin-left: auto;
+    position: absolute;
+    width: 4rem;
+  }
+  .header .header-top .hidden-xs-down {
+    display: none !important;
+  }
+  .header .header-top .search-site {
+    display: none !important;
+  }
+  .header .header-top .search-icon {
+    display: none !important;
+  }
+  .header .header-top .header .header-top .two {
+    width: none;
+  }
+  .header .header-top .two .small-logo {
+    margin: auto;
+  }
+  .long-search {
+    display: block !important;
+  }
+  .main-content .radio-pic .title-gaming {
+    padding-left: 0;
+    font-size: 1.3rem !important;
+  }
+}
+.main-container {
+  display: flex;
+  width: 80%;
+  padding-top: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid #444444;
+}
+.main-container .left-side {
+  background-color: #F9F9F9;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.main-container .left-side .top-sellers {
+  width: 100%;
+  padding-left: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.938rem;
+  color: #444444;
+  border-radius: 4px;
+}
+.main-container .left-side .reset-button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 18px;
+  color: #00A1E0;
+  border: 1px solid #00A1E0;
+  border-radius: 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+.main-container .left-side .reset-button:hover {
+  background-color: #00A1E0;
+  color: white;
+  cursor: pointer;
+}
+.main-container .left-side .container-category {
+  margin-top: 18px;
+}
+.main-container .left-side .container-category .category {
+  border: 1px solid #444444;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-container .left-side .container-category .category-radio {
+  border: 1px solid #444444;
+  border-top: none;
+  padding-top: 2.2rem;
+  padding-bottom: 3.8rem;
+  color: #0070D2;
+}
+.main-container .left-side .container-category .category-radio #electronics {
+  margin-left: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+.main-container .left-side .container-category .category-radio #electronics:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category .category-radio #gaming {
+  margin-left: 3.5rem;
+  margin-bottom: 0.8rem;
+}
+.main-container .left-side .container-category .category-radio #gaming:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category .category-radio #game_consoles {
+  margin-left: 4.5rem;
+  margin-bottom: 0.8rem;
+}
+.main-container .left-side .container-category .category-radio #game_consoles:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category .category-radio #games {
+  margin-left: 4.5rem;
+  margin-bottom: 0.8rem;
+}
+.main-container .left-side .container-category .category-radio #games:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category .category-price {
+  padding-left: 1.2rem;
+  color: #0070D2;
+  border: 1px solid #444444;
+  border-top: none;
+  padding-top: 2.2rem;
+  padding-bottom: 2.5rem;
+  color: #0070D2;
+}
+.main-container .left-side .container-category .category-price #dollar:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.main-container .left-side .container-category ul #atari:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #easports:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #lucasarts:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #midway:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #namco:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #nintendo:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #rockstargames:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #sega:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #sierra:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #sony:hover {
+  cursor: pointer;
+}
+.main-container .left-side .container-category ul #ubisoft:hover {
+  cursor: pointer;
+}
+.main-container .right-side {
+  width: 100%;
+  background-color: #F9F9F9;
+}
+.main-container .right-side .result {
+  text-align: center;
+  color: #444444;
+  padding-bottom: 1rem;
+}
+.main-container .right-side .container-for-boxes {
+  padding-top: 1rem;
+}
+.main-container .right-side .container-for-boxes .main-box {
+  padding: 0px 15px;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box1 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box1 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box2 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box2 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box3 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box3 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box4 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box4 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box5 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box5 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box6 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box6 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box7 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box7 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box8 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box8 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box9 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box9 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box10 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box10 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box11 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box11 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box12 {
+  position: relative;
+  height: 15.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container .right-side .container-for-boxes .main-box .img-box12 .nika-logo {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  color: #F9F9F9;
+}
+.main-container .right-side .container-for-boxes .main-box .lower-container {
+  padding: 2.8rem 0 1rem 0;
+}
+.main-container .right-side .container-for-boxes .main-box .lower-container a {
+  text-decoration: none;
+  color: #0070D2;
+}
+.main-container .right-side .container-for-boxes .main-box .lower-container .pro-price {
+  font-weight: 700;
+  font-size: 1.125em;
+}
+.main-container .more-results {
+  padding: 0.438rem 5rem 0.438rem 5rem;
+  margin: 0px 34.5%;
+  color: #00A1E0;
+  border: 1px solid #00A1E0;
+  border-radius: 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+.main-container .more-results:hover {
+  background-color: #00A1E0;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content .radio-pic .title-gaming {
+    font-size: 1.8rem;
+    padding-left: 0.625em;
+  }
+  .main-container {
+    margin: 0;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .main-container .right-side .result {
+    width: 30%;
+  }
+  .main-container .left-side {
+    display: none;
+  }
+  .main-container .top-sellers {
+    display: block !important;
+    height: 35px;
+  }
+  .main-container .right-side .result {
+    width: 30%;
+    margin: 0px auto;
+  }
+  .main-container .right-side .three-result {
+    width: 90%;
+    display: flex;
+    padding: 0px 1rem;
+  }
+  .main-container .right-side .three-result button {
+    display: block !important;
+    color: #fff;
+    background-color: #00a1e0;
+    border-color: #00a1e0;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: 0.375rem 3.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.1875rem;
+  }
+}
+@media screen and (max-width: 543px) {
+  .top-sellers {
+    margin-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+  }
+  .main-container .right-side .result {
+    margin-bottom: 45px;
+    padding-bottom: 0;
+  }
+  .main-container .right-side .three-result button {
+    height: 40px;
+    margin-top: 35px;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+  .main-container .right-side .container-for-boxes #main-box1 {
+    display: none !important;
+  }
+  .main-container .right-side .container-for-boxes #main-box6 {
+    display: none !important;
+  }
+  .main-container .right-side .container-for-boxes #main-box7 {
+    display: none !important;
+  }
+  .main-container .right-side .container-for-boxes #main-box12 {
+    display: none !important;
+  }
+  .main-container .more-results {
+    width: 94%;
+    margin: 0;
+  }
+  .three-result {
+    width: 100%;
+    position: relative;
+  }
+  .three-result .for-select {
+    width: 80%;
+  }
+  .three-result .top-sellers {
+    width: 100%;
+  }
+  .main-container .right-side .three-result button {
+    width: 80%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding: 0rem;
+  }
+}
+.foot {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #E9ECEF;
+  padding-top: 1.25em;
+  /* padding-bottom: 1.25em; */
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+.foot .container-for-4div {
+  margin: 0px 7.5rem;
+  display: flex;
+  height: 185px;
+  /* background-color: red; */
+  justify-content: center;
+  gap: 5px;
+}
+.foot .container-for-4div .container-footer1 {
+  width: 280px;
+  height: 180px;
+}
+.foot .container-for-4div .container-footer1 .for-link {
+  color: #444;
+  font-size: 0.875em;
+  line-height: 2em;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2;
+}
+.foot .container-for-4div .container-footer1 .for-link:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+.foot .container-for-4div .container-footer1 .for-link .footer-h2 {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 2.5em;
+  font-weight: 400;
+  font-family: Dosis, sans-serif;
+  padding-top: 0px;
+  /* padding-left: 22px; */
+  color: #444;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+.foot .container-for-4div .container-footer1 .footer-1-span {
+  display: block;
+  font-size: 0.875em;
+  /* padding-left:22px; */
+  line-height: 1.7em;
+}
+.foot .container-for-4div .container-footer2 {
+  width: 25%;
+}
+.foot .container-for-4div .container-footer2 .footer-h2 {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 2.5em;
+  font-weight: 400;
+  font-family: Dosis, sans-serif;
+  padding-top: 0px;
+  /* padding-left: 22px; */
+  color: #444;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+.foot .container-for-4div .container-footer2 .for-link {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.875em;
+  line-height: 2;
+}
+.foot .container-for-4div .container-footer2 .for-link:hover {
+  text-decoration: underline;
+}
+.foot .container-for-4div .container-footer3 {
+  width: 25%;
+}
+.foot .container-for-4div .container-footer3 .footer-h2 {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 2.5em;
+  font-weight: 400;
+  font-family: Dosis, sans-serif;
+  padding-top: 0px;
+  /* padding-left: 22px; */
+  color: #444;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+.foot .container-for-4div .container-footer3 .for-link {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.875em;
+  line-height: 2;
+}
+.foot .container-for-4div .container-footer3 .for-link:hover {
+  text-decoration: underline;
+}
+.foot .container-for-4div .container-footer4 {
+  width: 25%;
+}
+.foot .container-for-4div .container-footer4 .footer-h2 {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 2.5em;
+  font-weight: 400;
+  font-family: Dosis, sans-serif;
+  padding-top: 0px;
+  /* padding-left: 22px; */
+  color: #444;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+.foot .container-for-4div .container-footer4 .for-link {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.875em;
+  line-height: 2;
+}
+.foot .container-for-4div .container-footer4 .for-link:hover {
+  text-decoration: underline;
+}
+.foot .hr {
+  width: 83.3%;
+  color: red;
+}
+.foot .container-last {
+  padding: 2rem 7rem;
+  display: flex;
+}
+.foot .container-last .container-last-icon {
+  display: flex;
+  width: 390px;
+  height: 100%;
+  align-content: center;
+}
+.foot .container-last .container-last-icon .all-icon-in-one {
+  display: flex;
+  width: 210px;
+  font-size: 0.78rem;
+  /* height: 35px; */
+  align-content: center;
+  justify-content: space-around;
+  align-self: center;
+}
+.foot .container-last .container-last-icon .all-icon-in-one .set-icon {
+  color: #444444;
+}
+.foot .container-last .container-last-icon .all-icon-in-one .last-icon {
+  min-width: 35px;
+  height: 35px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+}
+.foot .container-last .container-last-icon .all-icon-in-one .last-icon .up {
+  color: #444;
+  font-size: 20px;
+  position: absolute;
+  border: 0px;
+  bottom: 20%;
+  left: 25%;
+}
+.foot .container-last .copyright {
+  font-size: 0.82rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .foot .container-for-4div {
+    margin: 0px 2rem;
+  }
+}
+@media screen and (max-width: 543px) {
+  .container-for-4div {
+    flex-direction: column;
+    display: none !important;
+  }
+  hr {
+    display: none !important;
+  }
+  .foot .container-last {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1.7rem;
+  }
+  .foot .container-last .container-last-icon {
+    width: 90%;
+    padding: 0px 15px;
+  }
+  .foot .container-last .container-last-icon .all-icon-in-one {
+    width: 100%;
+  }
+  .foot .container-last .copyright {
+    padding: 2rem 15px 2rem 15px;
+  }
+  .for-row {
+    display: block !important;
+  }
+}
+body {
+  background-color: #F9F9F9;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,429 @@
+$grey: #444444;
+$font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+;
+$blue: #00A1E0;
+
+.header {
+    width: 100%;
+    height: 7.474375rem;
+    // background-color: rgb(12, 234, 241);
+
+    .header-top {
+        // border: 3px solid green;
+        display: flex;
+        width: 82.5%;
+        height: 58.5%;
+        // background-color: rgb(0, 255, 64);
+        margin: 0px auto;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        // justify-content: center;
+
+        .toggler-container {
+            display: none;
+        }
+
+
+        .one {
+            position: relative;
+            // width: 39%;
+            // background-color: red;
+            display: flex;
+
+            .sign {
+                // position: absolute;
+                width: 7rem;
+                // font-family: $font;
+                color: $grey;
+                margin-left: 0.5em;
+                align-self: center;
+
+                .login {
+                    font-family: $font;
+                }
+            }
+
+        }
+
+        .two {
+            // background-color: coral;
+            width: 14.125em;
+            // margin-left: 28.5%;
+            position: relative;
+            margin: auto 3.5px;
+            margin-left: auto;
+
+            .small-logo {
+                display: none;
+            }
+
+        }
+
+        .three {
+            width: 40%;
+            // background-color: red;
+
+            .searchandbag {
+                // width: 60%;
+                padding-left: 2.8rem;
+                display: flex;
+                height: 100%;
+
+                .search-site {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin: auto 0px;
+                    // margin-left: 20px;
+                    // height: 83%;
+                    width: 20rem;
+                    // top: 10%;
+                    // left: 8.3%;
+                    color: #495057;
+                    background-color: #fff;
+                    border: 0.5px solid #d1d0d0;
+                    border-radius: 0.1875rem;
+                    padding: 0.3rem 0.75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+
+
+                }
+
+                .search-icon {
+                    position: relative;
+                    padding: 0;
+                    background-color: white;
+                    border: none;
+                    height: 20px;
+                    margin: auto 0px;
+                    left: -23px;
+                }
+
+                .bagandquantity {
+                    // background-color: red;
+                    margin: auto 0px;
+                }
+
+                .minicart-icon {
+                    margin: auto 0px;
+                    color: $grey;
+                    font-size: 24px;
+                    margin-left: 7px;
+                }
+
+                .minicart-quantity {
+                    position: absolute;
+                    background-color: #00a1e0;
+                    border-radius: 50%;
+                    width: 1.25em;
+                    height: 1.25em;
+                    line-height: normal;
+                    /* display: inline-block; */
+                    text-align: center;
+                    font-size: .8125em;
+                    top: 25%;
+                    // left: -5%;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    .nav {
+        position: relative;
+        width: 100%;
+        height: 41.5%;
+        background-color: $grey;
+        background-color: #444444;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        .nav-li-container {
+            // position: absolute;
+            // left: 7.8%;
+            // width: 54%;
+            // height: 45px;
+            // top: 4%;
+
+            .navbar {
+                height: 100%;
+                position: absolute;
+                left: 7.8%;
+                // width: 54%;
+
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                // left: 0.3%;
+                // top: 3%;
+                // height: 50px;
+                // width: 100%;
+                font-size: 16px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                li {
+                    display: inline-block;
+                    position: relative;
+
+                    a {
+                        display: block;
+                        color: #ffffff;
+                        padding: 10px;
+                        // padding-right: 20px;
+                        // padding-top: 13px;
+
+                        text-decoration: none;
+                        // color: #444444;
+                        /* margin-top: 4px; */
+
+
+
+                    }
+
+                    &:hover a {
+                        color: #444444;
+                        background-color: white;
+
+
+                    }
+
+                    &:hover>ul {
+                        display: block;
+                    }
+
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+                    min-width: 200px;
+                    padding: 0;
+                    z-index: 1;
+                    /* margin-top: 4px; */
+                    /* padding-left: 91px; */
+
+                    li {
+                        width: 100%;
+
+                    }
+
+                    ul {
+                        left: 100%;
+                        top: 0;
+
+                    }
+                }
+
+                .hide-me {
+                    display: none;
+
+
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+.main-content {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    position: relative;
+
+    .radio-pic {
+        width: 100%;
+        background-image: url("./media/cat-landing-gaming.jpg");
+        height: 25vw;
+        background-size: cover;
+        background-position: 50%;
+        position: relative;
+        background-position-y: 40%;
+        clip-path: polygon(0% 0, 100% 0%, 100% 85%, 0% 100%);
+
+        .title-gaming {
+            top: 50%;
+            margin: -1em 0 0;
+            position: relative;
+            color: #fff;
+            padding: 0.3125em 0.625em 0.3125em 6.6vw;
+            background-color: #00a1e0;
+            display: inline-block;
+            font-family: Dosis, sans-serif;
+            font-weight: 100;
+            line-height: 1.2;
+            font-size: 3rem;
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    .sign {
+        display: none;
+        background-color: red;
+    }
+
+    .hide-me {
+        display: block !important;
+    }
+
+    .logo-img {
+        display: none;
+    }
+
+    .small-logo {
+        display: block !important;
+        // margin-left: 7.2rem;
+        // margin-right: 0px;
+        margin-left: 9rem;
+        width: 4rem;
+    }
+
+    .searchandbag {
+        // background-color: red;
+        width: 20rem;
+        // border: 2px solid black;
+
+    }
+
+    .header .header-top .three .searchandbag {
+        padding-left: 0;
+    }
+
+    .header .header-top {
+        width: 52.5%;
+    }
+
+    .header .header-top .three .searchandbag .search-site {
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 4.3rem;
+
+        .header-top {
+            padding: 0px 1rem;
+            padding-top: 13px;
+            width: 100%;
+
+
+            .toggler-container {
+                display: block;
+                width: 120px;
+
+                .toggler {
+                    display: block;
+                    font-size: 25px;
+                    // margin-top: 15%;
+                    border: none;
+                    background-color: #F9F9F9;
+
+                }
+            }
+
+            // .header .header-top .two .small-logo {margin-left: 3rem;}
+            .two .small-logo {
+                margin-left: 5.9rem;
+            }
+
+            .three .searchandbag .search-site {
+                width: 11.5rem;
+            }
+        }
+
+        .nav {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 543px) {
+    .header {
+        .header-top {
+            width: 100%;
+            position: relative;
+
+            .toggler-container {
+                width: 30px;
+            }
+
+            .two{margin:0px auto;}
+            .three {
+                width: 20%;
+                .searchandbag {
+                    margin-left: auto;
+                    position: absolute;
+                    width: 4rem;
+                    
+                }
+            }
+
+            // background-color: red;
+            .hidden-xs-down {
+                display: none !important;
+
+            }
+
+            .search-site {
+                display: none !important;
+
+            }
+
+            .search-icon {
+                display: none !important;
+            }
+
+            .bagandquantity {
+                // padding-left: 40%;
+
+            }
+
+
+
+            .header .header-top .two {
+                width: none;
+            }
+
+        }
+
+
+
+    }
+
+    .header .header-top .two .small-logo {
+        margin: auto;
+    }
+
+    .long-search {
+        display: block !important;
+    }
+
+    .main-content .radio-pic .title-gaming {
+        padding-left: 0;
+        font-size: 1.3rem !important;
+    }
+
+    
+
+}
